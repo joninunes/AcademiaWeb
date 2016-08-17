@@ -16,21 +16,52 @@
 	
 	<h:body>
 		<header>
-			<div>
-				<h:link>
-					<h:graphicImage library="images" name="logo.png"/>
+			<div style="float: left">			
+				<h:link outcome="/home" value="">
+<!-- 					<h:graphicImage library="images" name="logo.png"/> -->
 				</h:link>
 			</div>
+			
+					
+			<div style="float: right; margin-rigth: 110px">
+				<span style="float: left; height: 30px; line-height: 30px; margin-right: 100px ">
+					Bem Vindo!
+				</span>
+				<h:form style="display: inline-block">
+					<p:menubar styleClass="menu-sistema">
+						<p:submenu label="Cadastros">
+							<p:menuitem value="Configurações"/>
+							<p:menuitem value="Usuários"/>
+							<p:separator/>
+							<p:menuitem value="Clientes" outcome="/cliente-pesquisa"/>							
+						</p:submenu>
+						
+						<p:submenu label="Avaliação Física">
+							<p:menuitem value="Novo"/>
+							<p:menuitem value="Pesquisar"/>							
+						</p:submenu>
+						
+						<p:submenu label="Financeiro">
+							<p:menuitem value="Novo"/>
+							<p:menuitem value="Pesquisar"/>
+						</p:submenu>
+						<p:menuitem value="Sair"/>
+					</p:menubar>
+				</h:form>
+				
+			</div>
+			
+			<div style="clear: both"/>
 		</header>
 		
 		<div id="conteudo">
 		<ui:insert name="corpo"/>	
 	</div>
 	
-	<p:separator style="margin-top: 20px" />
+<!-- 	<p:separator style="margin-top: 20px" /> -->
 	
 	<footer>
-		Sistema Gestão
+<!-- 		SGAW - Sistema Gestão de Academias na Web -->
 	</footer>
 	</h:body>
 	

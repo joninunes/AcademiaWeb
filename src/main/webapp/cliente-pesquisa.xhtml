@@ -1,0 +1,59 @@
+<ui:composition template="/WEB-INF/template/LayoutPadrao.xhtml"
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+
+
+	<ui:define name="titulo"> Consulta</ui:define>
+
+	<ui:define name="corpo">
+		<h1>Consulta de Clientes</h1>
+		
+		
+		<p:toolbar style="margin-top: 20px">
+			<p:toolbarGroup>
+				<p:button id="botao-pesquisar" icon="ui-icon-search"  value="Pesquisar" />				
+			</p:toolbarGroup>
+
+			<p:toolbarGroup align="right">
+				<p:button id="Novo" icon="ui-icon-document" value="Novo" outcome="/cliente" />
+			</p:toolbarGroup>
+
+		</p:toolbar>
+
+		
+
+		<p:panelGrid id="painel" columns="2"
+			style="width: 100%; margin-top: 20px">
+
+			<p:outputLabel id="label-Codigo" value="Código" />
+			<p:inputText id="campo-Codigo" />
+
+		</p:panelGrid>
+		
+		
+		<p:dataTable id="tabelaDados" value="" var="lista"
+		style="margin-top: 20px" emptyMessage="Nenhum registro encontrado." rows="20"
+		paginator="true" paginatorAlwaysVisible="true" paginatorPosition="bottom">
+		
+			<p:column headerText="Codigo"  style="text-align: center; width: 100px">
+				<h:outputText value="01"/>
+			</p:column>
+			
+			<p:column headerText="Nome"  style="text-align: center; width: 100px">
+				<h:outputText value="Joni"/>
+			</p:column>
+			
+			<p:column headerText="Telefone"  style="text-align: center; width: 100px">
+				<h:outputText value="45-88140524"/>
+			</p:column>
+		
+		</p:dataTable>
+
+	</ui:define>
+
+
+
+</ui:composition>
