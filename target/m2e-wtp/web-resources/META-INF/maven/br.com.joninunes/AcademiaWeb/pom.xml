@@ -25,7 +25,12 @@
 			<version>6.0</version>
 		</dependency>
 
-
+		<!-- PrimeFaces Theme -->
+		<dependency>
+			<groupId>org.primefaces.themes</groupId>
+			<artifactId>adamantium</artifactId>
+			<version>1.0</version>
+		</dependency>
 	</dependencies>
   
 </project>
