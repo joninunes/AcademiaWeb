@@ -1,0 +1,146 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui"
+	template="/WEB-INF/template/template.xhtml">
+
+	<ui:define name="content">
+		<h:form id="formulario-cadastro">
+
+			<div class="Container100">
+				<div class="ContainerIndent">
+					<div class="Card">
+						<div class="CardTopic">Novo Registro</div>
+						<!-- Menu -->
+						<BR />
+						<p:button id="botao-novo" value="Novo" icon="ui-icon-document" outcome="aluno.xhtml" />
+						<p:button id="botao-salvar" value="Salvar" icon="ui-icon-check"/>
+						<p:button id="botao-pesquisar" value="Pesquisar" icon="ui-icon-search" outcome="aluno-pesquisa.xhtml"/>
+						<div class="SeparatorFull"></div>
+
+						<p:tabView>
+							<p:tab title="Dados Pessoais">
+
+								<p:panelGrid columns="4"
+									columnClasses="ui-grid-col-2,ui-grid-col-4,ui-grid-col-2,ui-grid-col-4"
+									layout="grid" styleClass="ui-panelgrid-blank"
+									style="border:0px none; background-color:transparent;">
+
+									<p:outputLabel id="label-empresa" value="Empresa" />
+									<p:inputText id="campo-empresa"  disabled="true" />
+
+									<p:outputLabel id="label-usuario" value="Usuário" />
+									<p:inputText id="campo-usuario" disabled="true" />
+
+
+
+									<p:outputLabel id="label-codigo" value="Código" />
+									<p:inputText id="campo-codigo" disabled="true" />
+
+									<p:outputLabel id="label-nome" value="Nome" />
+									<p:inputText id="campo-nome" required="true" />
+
+									<p:outputLabel id="label-rg" value="Identidade" />
+									<p:inputText id="campo-rg" />
+
+									<p:outputLabel id="label-cpf" value="CPF" />
+									<p:inputText id="campo-cpf" />
+
+									<p:outputLabel id="label-data-nascimento"
+										value="Data de Nascimento" />
+									<p:inputText id="campo-data-nascimento" />
+
+									<p:outputLabel id="label-cidade-nascimento"
+										value="Cidade Nascimento" style="width:125px" />
+									<p:selectOneMenu id="combo-cidade-nascimento">
+										<f:selectItem itemLabel="Foz do Iguaçu" itemValue="F" />
+									</p:selectOneMenu>
+
+									<p:outputLabel id="label-nacionalidade" value="Nacionalidade"
+										style="width:125px" />
+									<p:selectOneMenu id="combo-nacionalidade" >
+										<f:selectItem itemLabel="Brasil" itemValue="B" />
+										<f:selectItem itemLabel="Paraguai" itemValue="P" />
+									</p:selectOneMenu>
+
+
+								</p:panelGrid>
+							</p:tab>
+
+							<p:tab title="Endereço">
+
+								<p:panelGrid columns="4"
+									columnClasses="ui-grid-col-2,ui-grid-col-4,ui-grid-col-2,ui-grid-col-4"
+									layout="grid" styleClass="ui-panelgrid-blank"
+									style="border:0px none; background-color:transparent;">
+
+
+									<p:outputLabel id="label-rua" value="Rua" />
+									<p:inputText id="campo-rua" />
+
+									<p:outputLabel id="label-numero-casa" value="Nº" />
+									<p:inputText id="campo-numero-casa" />
+
+									<p:outputLabel id="label-bairro" value="Bairro" />
+									<p:inputText id="campo-bairro" />
+
+									<p:outputLabel id="label-cep" value="CEP" />
+									<p:inputText id="campo-cep" />
+
+
+
+									<p:outputLabel id="label-cidade-endereco" value="Cidade"
+										style="width:125px" />
+									<p:selectOneMenu id="combo-cidade-endereco">
+										<f:selectItem itemLabel="Foz do Iguaçu" itemValue="F" />
+									</p:selectOneMenu>
+
+									<p:outputLabel id="label-pais-endereco" value="Pais"
+										style="width:125px" />
+									<p:selectOneMenu id="combo-pais-endereco">
+										<f:selectItem itemLabel="Brasil" itemValue="B" />
+										<f:selectItem itemLabel="Paraguai" itemValue="P" />
+									</p:selectOneMenu>
+
+									<p:outputLabel id="label-telefone" value="Telefone" />
+									<p:inputText id="campo-telefone" />
+
+									<p:outputLabel id="label-celular" value="Celular" />
+									<p:inputText id="campo-celular" />
+
+									<p:outputLabel id="label-email" value="Email" />
+									<p:inputText id="campo-email" />
+
+								</p:panelGrid>
+							</p:tab>
+
+							<p:tab title="Outras Informações">
+
+								<p:panelGrid columns="4"
+									columnClasses="ui-grid-col-2,ui-grid-col-4,ui-grid-col-2,ui-grid-col-4"
+									layout="grid" styleClass="ui-panelgrid-blank"
+									style="border:0px none; background-color:transparent;">
+
+									<p:outputLabel id="label-situacao" value="Situação" />									
+									<p:inputText id="campo-situacao" disabled="true" />
+
+									<p:outputLabel id="label-data-cadastro" value="Data Cadastro" />
+									<p:inputText id="campo-data-cadastro" disabled="true" />									
+
+									<p:outputLabel id="label-data-atualizacao-cadastro"
+										value="Data Atualização Cadastro" />
+									<p:inputText id="campo-data-atualizacao-cadastro"
+										disabled="true" />
+
+								</p:panelGrid>
+							</p:tab>
+						</p:tabView>
+
+					</div>
+				</div>
+			</div>
+		</h:form>
+	</ui:define>
+
+</ui:composition>
