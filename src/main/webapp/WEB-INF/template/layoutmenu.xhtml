@@ -1,0 +1,33 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:pm="http://primefaces.org/adamantium">
+
+	<div class="layout-menu-cover-top Animated05" id="layout-menu-cover">
+		<h:form id="menuform">
+			<pm:menu>
+				<p:menuitem id="rm_dashboard" value=" Dashboard" icon="icon-feather" />
+				<p:menuitem id="rm_promotion" value=" Promotion Page"
+					icon="icon-globe" />
+				<p:submenu id="rm_orientation" label=" Menu Options"
+					icon="icon-menu">
+					<p:menuitem id="rm_top" value=" Top Menu" icon="icon-layout7"
+						url="#" onclick="Adamantium.changeMenuLayout('top');return false;" />
+					<p:menuitem id="rm_left" value=" Left Menu" icon="icon-layout14"
+						url="#"
+						onclick="Adamantium.changeMenuLayout('left');return false;" />
+					<p:menuitem id="rm_dark" value=" Dark Menu"
+						icon="icon-pen-alt-fill" url="#"
+						onclick="$('body').addClass('dark');return false;" />
+					<p:menuitem id="rm_light" value=" Light Menu"
+						icon="icon-pen-alt-stroke" url="#"
+						onclick="$('body').removeClass('dark');return false;" />
+				</p:submenu>
+			</pm:menu>
+		</h:form>
+
+	</div>
+
+</ui:composition>

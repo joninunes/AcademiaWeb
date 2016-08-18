@@ -33,15 +33,15 @@
 
 				<p:panelGrid id="painel-dados-pessoais" columns="2"
 					style="width: 100%; margin-top: 20px">
-					
+
 					<p:outputLabel id="label-empresa" value="Empresa" />
 					<p:inputText id="campo-empresa" disabled="true" />
-					
+
 					<p:outputLabel id="label-usuario" value="Usuário" />
 					<p:inputText id="campo-usuario" disabled="true" />
 
 
-					
+
 					<p:outputLabel id="label-codigo" value="Código" />
 					<p:inputText id="campo-codigo" disabled="true" />
 
@@ -58,12 +58,14 @@
 						value="Data de Nascimento" />
 					<p:inputText id="campo-data-nascimento" />
 
-					<p:outputLabel id="label-cidade-nascimento" value="Cidade Nascimento" style="width:125px"/>
+					<p:outputLabel id="label-cidade-nascimento"
+						value="Cidade Nascimento" style="width:125px" />
 					<p:selectOneMenu id="combo-cidade-nascimento">
 						<f:selectItem itemLabel="Foz do Iguaçu" itemValue="F" />
 					</p:selectOneMenu>
-					
-					<p:outputLabel id="label-nacionalidade" value="Nacionalidade" style="width:125px"/>
+
+					<p:outputLabel id="label-nacionalidade" value="Nacionalidade"
+						style="width:125px" />
 					<p:selectOneMenu id="combo-nacionalidade">
 						<f:selectItem itemLabel="Brasil" itemValue="B" />
 						<f:selectItem itemLabel="Paraguai" itemValue="P" />
@@ -77,75 +79,65 @@
 
 				<p:panelGrid id="painel-endereco" columns="2"
 					style="width: 100%; margin-top: 20px">
-					
-									
-					<p:outputLabel id="label-rua"
-						value="Rua" />
-					<p:inputText id="campo-rua" />
-					
-					<p:outputLabel id="label-numero-casa"
-						value="Nº" />
-					<p:inputText id="campo-numero-casa" />
-					
-					<p:outputLabel id="label-bairro"
-						value="Bairro" />
-					<p:inputText id="campo-bairro" />
-					
-					<p:outputLabel id="label-cep"
-						value="CEP" />
-					<p:inputText id="campo-cep" />
-					
-					
 
-					<p:outputLabel id="label-cidade-endereco" value="Cidade" style="width:125px"/>
+
+					<p:outputLabel id="label-rua" value="Rua" />
+					<p:inputText id="campo-rua" />
+
+					<p:outputLabel id="label-numero-casa" value="Nº" />
+					<p:inputText id="campo-numero-casa" />
+
+					<p:outputLabel id="label-bairro" value="Bairro" />
+					<p:inputText id="campo-bairro" />
+
+					<p:outputLabel id="label-cep" value="CEP" />
+					<p:inputText id="campo-cep" />
+
+
+
+					<p:outputLabel id="label-cidade-endereco" value="Cidade"
+						style="width:125px" />
 					<p:selectOneMenu id="combo-cidade-endereco">
 						<f:selectItem itemLabel="Foz do Iguaçu" itemValue="F" />
 					</p:selectOneMenu>
-					
-					<p:outputLabel id="label-pais-endereco" value="Pais" style="width:125px"/>
+
+					<p:outputLabel id="label-pais-endereco" value="Pais"
+						style="width:125px" />
 					<p:selectOneMenu id="combo-pais-endereco">
 						<f:selectItem itemLabel="Brasil" itemValue="B" />
 						<f:selectItem itemLabel="Paraguai" itemValue="P" />
 					</p:selectOneMenu>
-					
-					<p:outputLabel id="label-telefone"
-						value="Telefone" />
+
+					<p:outputLabel id="label-telefone" value="Telefone" />
 					<p:inputText id="campo-telefone" />
-					
-					<p:outputLabel id="label-celular"
-						value="Celular" />
+
+					<p:outputLabel id="label-celular" value="Celular" />
 					<p:inputText id="campo-celular" />
-					
-					<p:outputLabel id="label-email"
-						value="Email" />
+
+					<p:outputLabel id="label-email" value="Email" />
 					<p:inputText id="campo-email" />
 
 				</p:panelGrid>
 			</p:tab>
-			
+
 			<p:tab title="Outras Informações">
 
 				<p:panelGrid id="painel-outras-informacoes" columns="2"
 					style="width: 100%; margin-top: 20px">
-					
+
 					<p:outputLabel id="label-situacao" value="Situação" />
 					<p:inputText id="campo-situacao" disabled="true" />
-					
+
 					<p:outputLabel id="label-data-cadastro" value="Data Cadastro" />
 					<p:inputText id="campo-data-cadastro" disabled="true" />
-					
-					<p:outputLabel id="label-data-atualizacao-cadastro" value="Data Atualização Cadastro" />
+
+					<p:outputLabel id="label-data-atualizacao-cadastro"
+						value="Data Atualização Cadastro" />
 					<p:inputText id="campo-data-atualizacao-cadastro" disabled="true" />
 
 				</p:panelGrid>
 			</p:tab>
-			
-			
-
 		</p:tabView>
 
 	</ui:define>
-
-
-
 </ui:composition>

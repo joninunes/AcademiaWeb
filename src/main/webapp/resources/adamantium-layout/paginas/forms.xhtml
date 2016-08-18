@@ -1,0 +1,49 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:p="http://primefaces.org/ui"
+                template="/WEB-INF/template/template.xhtml">
+    
+    <ui:define name="subheader">
+        Forms
+    </ui:define>
+
+    <ui:define name="content">
+
+        <div class="Container100">
+            <div class="ContainerIndent">
+                <div class="Card ui-fluid">
+                    <div class="CardTopic">InputText - TextArea</div>
+                    <div class="SeparatorFull"></div>
+                    <div class="Container50 Responsive50">
+                        <div class="ContainerIndent">
+                            <h2 class="BigTopic">InputText</h2>
+                            <h:form>
+                            <p:panelGrid columns="3" layout="grid" style="border:0px !important; background:none;" styleClass="ui-panelgrid-blank" >
+                                
+                             
+                                <p:inputText placeholder="Código" id="id" value="#{contatoMB.contato.id}" disabled="true"/>
+                                <p:inputText placeholder="Nome" id="nome" value="#{contatoMB.contato.nome}"/>
+                                <p:inputText placeholder="Telefone" id="telefone" value="#{contatoMB.contato.telefone}"/>
+                                <p:inputText placeholder="E-Mail" id="email" value="#{contatoMB.contato.email}"/>
+                                <p:inputText placeholder="Endereço" id="endereco" value="#{contatoMB.contato.endereco}"/>   
+                                                                                 						    
+							    <p:splitButton id="Salvar" value="salvar" action="#{contatoMB.salvar}" type="button" icon="ui-icon-check fa fa-check" style="max-width:150px;">		                            
+		                        </p:splitButton>  
+		                        
+		                        <p:button value="Listar" icon="fa fa-sign-in" href="datatable_example.xhtml" styleClass="CyanButton"/>            		
+                        		           
+                        		                                                            
+                            </p:panelGrid>
+                               </h:form>
+                        </div>
+                    </div>                   
+                </div>
+            </div>
+        </div>
+
+
+    </ui:define>
+
+</ui:composition>
