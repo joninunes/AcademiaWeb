@@ -8,23 +8,26 @@
 	<div class="layout-menu-cover-top Animated05" id="layout-menu-cover">
 		<h:form id="menuform">
 			<pm:menu>
-				<p:menuitem id="rm_dashboard" value=" Dashboard" icon="icon-feather" />
-				<p:menuitem id="rm_promotion" value=" Promotion Page"
-					icon="icon-globe" />
-				<p:submenu id="rm_orientation" label=" Menu Options"
-					icon="icon-menu">
-					<p:menuitem id="rm_top" value=" Top Menu" icon="icon-layout7"
-						url="#" onclick="Adamantium.changeMenuLayout('top');return false;" />
-					<p:menuitem id="rm_left" value=" Left Menu" icon="icon-layout14"
-						url="#"
-						onclick="Adamantium.changeMenuLayout('left');return false;" />
-					<p:menuitem id="rm_dark" value=" Dark Menu"
-						icon="icon-pen-alt-fill" url="#"
-						onclick="$('body').addClass('dark');return false;" />
-					<p:menuitem id="rm_light" value=" Light Menu"
-						icon="icon-pen-alt-stroke" url="#"
-						onclick="$('body').removeClass('dark');return false;" />
+				<p:submenu id="menu-cadastros" label=" Cadastros" icon="icon-feather" >					
+					<p:menuitem id="cadastro-configuracoes-gerais" url="cliente.xhtml" value="Configurações Gerais"/>
+					<p:menuitem id="cadastro-usuarios" url="cliente.xhtml" value="Usuários"/>
+					<p:separator></p:separator>
+					<p:menuitem id="cadastro-alunos" url="alunos-pesquisa.xhtml" value="Alunos"/>
+					<p:separator></p:separator>
+					<p:menuitem id="cadastro-clientess" url="cliente.xhtml" value="teste"/>
 				</p:submenu>
+				
+				<p:submenu id="menu-avaliacao" label=" Avaliação Física" icon="icon-feather" >					
+					<p:menuitem id="avaliacao-pesquisa" url="avaliacao-pesquisa.xhtml" value="Avaliações"/>					
+				</p:submenu>
+				
+				<p:submenu id="menu-financeiro" label=" Financeiro" icon="icon-feather" >
+					<p:menuitem id="financeiro-contas" url="contas-pesquisa.xhtml" value="Contas"/>
+					<p:separator></p:separator>
+					<p:menuitem id="financeiro-financeiro-pesquisa" url="financeiro-pesquisa.xhtml" value="Financeiro"/>
+					
+				</p:submenu>
+				
 			</pm:menu>
 		</h:form>
 

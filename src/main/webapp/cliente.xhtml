@@ -1,38 +1,19 @@
-<ui:composition template="/WEB-INF/template/LayoutPadrao.xhtml"
-	xmlns="http://www.w3.org/1999/xhtml"
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
 	xmlns:h="http://java.sun.com/jsf/html"
 	xmlns:f="http://java.sun.com/jsf/core"
-	xmlns:ui="http://java.sun.com/jsf/facelets"
-	xmlns:p="http://primefaces.org/ui">
+	xmlns:p="http://primefaces.org/ui"
+	template="/WEB-INF/template/template.xhtml">
 
-
-	<ui:define name="titulo"> Novo Cliente	</ui:define>
-
-	<ui:define name="corpo">
-
-		<h1>Novo Cliente</h1>
-		<p:growl id="mensagem" sticky="true" showDetail="true" />
-
-		<p:toolbar style="margin-top: 20px">
-			<p:toolbarGroup>
-				<p:button id="botao-novo" icon="ui-icon-document" value="Novo"
-					outcome="/cliente" />
-				<p:commandButton id="botao-salvar" icon="ui-icon-check"
-					value="Salvar" update="mensagem" />
-			</p:toolbarGroup>
-
-			<p:toolbarGroup align="right">
-				<p:button id="botao-pesquisa" icon="ui-icon-search"
-					value="Pesquisar" outcome="/cliente-pesquisa" />
-			</p:toolbarGroup>
-
-		</p:toolbar>
+	<ui:define name="content">
 
 		<p:tabView>
 			<p:tab title="Dados Pessoais">
 
-				<p:panelGrid id="painel-dados-pessoais" columns="2"
-					style="width: 100%; margin-top: 20px">
+				<p:panelGrid columns="2"
+					columnClasses="ui-grid-col-2,ui-grid-col-4,ui-grid-col-2,ui-grid-col-4"
+					layout="grid" styleClass="ui-panelgrid-blank"
+					style="border:0px none; background-color:transparent;">
 
 					<p:outputLabel id="label-empresa" value="Empresa" />
 					<p:inputText id="campo-empresa" disabled="true" />
@@ -77,8 +58,10 @@
 
 			<p:tab title="Endereço">
 
-				<p:panelGrid id="painel-endereco" columns="2"
-					style="width: 100%; margin-top: 20px">
+				<p:panelGrid columns="2"
+					columnClasses="ui-grid-col-2,ui-grid-col-4,ui-grid-col-2,ui-grid-col-4"
+					layout="grid" styleClass="ui-panelgrid-blank"
+					style="border:0px none; background-color:transparent;">
 
 
 					<p:outputLabel id="label-rua" value="Rua" />
@@ -122,8 +105,10 @@
 
 			<p:tab title="Outras Informações">
 
-				<p:panelGrid id="painel-outras-informacoes" columns="2"
-					style="width: 100%; margin-top: 20px">
+				<p:panelGrid columns="2"
+					columnClasses="ui-grid-col-2,ui-grid-col-4,ui-grid-col-2,ui-grid-col-4"
+					layout="grid" styleClass="ui-panelgrid-blank"
+					style="border:0px none; background-color:transparent;">
 
 					<p:outputLabel id="label-situacao" value="Situação" />
 					<p:inputText id="campo-situacao" disabled="true" />
@@ -140,4 +125,5 @@
 		</p:tabView>
 
 	</ui:define>
+
 </ui:composition>
