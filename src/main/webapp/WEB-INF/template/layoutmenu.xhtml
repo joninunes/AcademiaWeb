@@ -8,26 +8,36 @@
 	<div class="layout-menu-cover-top Animated05" id="layout-menu-cover">
 		<h:form id="menuform">
 			<pm:menu>
-				<p:submenu id="menu-cadastros" label=" Cadastros" icon="icon-feather" >					
-					<p:menuitem id="cadastro-configuracoes-gerais" url="cliente.xhtml" value="Configurações Gerais"/>
-					<p:menuitem id="cadastro-usuarios" url="cliente.xhtml" value="Usuários"/>
-					<p:separator></p:separator>
-					<p:menuitem id="cadastro-alunos" url="aluno-pesquisa.xhtml" value="Alunos"/>
-					<p:separator></p:separator>
-					<p:menuitem id="cadastro-clientess" url="cliente.xhtml" value="teste"/>
+				<p:submenu id="menu-cadastros" label=" Cadastros"
+					icon="icon-feather">
+					<p:menuitem id="cadastro-configuracoes-gerais" url="cliente.xhtml"
+						value="Configurações Gerais" />
+					<p:menuitem id="cadastro-usuarios" url="cliente.xhtml"
+						value="Usuários" />					
+					<p:menuitem id="cadastro-alunos" url="aluno-pesquisa.xhtml"
+						value="Alunos" />
+					<p:menuitem id="cadastro-instrutores" url="aluno-pesquisa.xhtml"
+						value="Professores" />
+
 				</p:submenu>
-				
-				<p:submenu id="menu-avaliacao" label=" Avaliação Física" icon="icon-feather" >					
-					<p:menuitem id="avaliacao-pesquisa" url="avaliacao-pesquisa.xhtml" value="Avaliações"/>					
+
+				<p:menuitem id="avaliacao-pesquisa" url="avaliacao-pesquisa.xhtml"
+					value=" Avaliação Física" />
+				<p:menuitem id="matricula-pesquisa" url="matricula-pesquisa.xhtml"
+					value="Matricular Aluno" />
+
+
+				<p:submenu id="menu-financeiro" label=" Financeiro"
+					icon="icon-feather">
+					<p:menuitem id="financeiro-contas" url="conta-pesquisa.xhtml"
+						value="Contas" />
+					<p:menuitem id="financeiro-planos-pagamento" url="plano-pagamento-pesquisa.xhtml"
+						value="Planos" />
+					<p:menuitem id="financeiro-mensalidades-pesquisa"
+						url="mensalidade-pesquisa.xhtml" value="Mensalidades" />
+
 				</p:submenu>
-				
-				<p:submenu id="menu-financeiro" label=" Financeiro" icon="icon-feather" >
-					<p:menuitem id="financeiro-contas" url="contas-pesquisa.xhtml" value="Contas"/>
-					<p:separator></p:separator>
-					<p:menuitem id="financeiro-financeiro-pesquisa" url="financeiro-pesquisa.xhtml" value="Financeiro"/>
-					
-				</p:submenu>
-				
+
 			</pm:menu>
 		</h:form>
 
